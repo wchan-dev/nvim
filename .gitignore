@@ -5,3 +5,7 @@ ftplugin
 coc-settings.json
 .luarc.json
 lazy-lock.json
+.DS_Store
+config
+description
+HEAD
