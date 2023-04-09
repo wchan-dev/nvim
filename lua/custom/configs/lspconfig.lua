@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "tsserver", "clangd","gopls", "jedi_language_server" }
+local servers = { "html", "cssls", "tsserver", "clangd","gopls", "jedi_language_server", "bashls" }
 
 lspconfig["lua_ls"].setup {
   capabilities = capabilities,

@@ -46,12 +46,7 @@ M.general = {
     ["<leader>b"] = { "<cmd> enew <CR>", "new buffer" },
     ["<leader>ch"] = { "<cmd> NvCheatsheet <CR>", "Mapping cheatsheet" },
 
-    -- window management 
-    ["<leader>sv"] = {"<C-w>v", "split window vertically"},
-    ["<leader>sh"] = {"<C-w>s", "split window horizontally"},
-    ["<leader>se"] = {"<C-w>=", "windows equal width and height"},
-    ["<leader>sx"] = {":close<CR>", "close current split window"}
-  },
+ },
 
   t = {
     ["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "escape terminal mode" },

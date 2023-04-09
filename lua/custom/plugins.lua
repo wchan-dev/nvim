@@ -46,6 +46,23 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+
+  {
+    "tpope/vim-dadbod",
+    config = function()
+      require("custom.configs.dadbod").setup()
+    end,
+        cmd = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
+    lazy = false,
+  },
+  {
+    "kristijanhusak/vim-dadbod-ui",
+    lazy = false,
+  },
+  {
+    "kristijanhusak/vim-dadbod-completion",
+    -- lazy = false,
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",

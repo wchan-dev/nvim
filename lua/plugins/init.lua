@@ -251,7 +251,7 @@ local default_plugins = {
   },
   {
     "fatih/vim-go",
-    lazy = false,
+    lazy = false
   },
   -- Only load whichkey after all the gui
   {
