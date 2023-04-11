@@ -49,21 +49,17 @@ local plugins = {
 
   {
     "tpope/vim-dadbod",
+    cmd = {"DB", "DBUI" },
+    dependencies = {
+      "kristijanhusak/vim-dadbod-ui",
+      "kristijanhusak/vim-dadbod-completion",
+    },
     config = function()
       require("custom.configs.dadbod").setup()
     end,
-        cmd = { "DBUIToggle", "DBUI", "DBUIAddConnection", "DBUIFindBuffer", "DBUIRenameBuffer", "DBUILastQueryInfo" },
     lazy = false,
   },
-  {
-    "kristijanhusak/vim-dadbod-ui",
-    lazy = false,
-  },
-  {
-    "kristijanhusak/vim-dadbod-completion",
-    -- lazy = false,
-  },
-  -- To make a plugin not be loaded
+    -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false

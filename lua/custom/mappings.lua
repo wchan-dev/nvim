@@ -11,11 +11,10 @@ M.general = {
     ["<leader>sx"] = {":close<CR>", "close current split window"},
 
     -- database
-    -- commenting out for now until dadbod is fixed
-    -- ["<leader>dbu"] = {"<Cmd>DBUIToggle<Cr>", "Toggle DB UI"},
-    -- ["<leader>dbf"] = { "<Cmd>DBUIFindBuffer<Cr>", "Find buffer" },
-    -- ["<leader>dbr"] = { "<Cmd>DBUIRenameBuffer<Cr>", "Rename buffer" },
-    -- ["<leader>dbq"] = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
+    ["<leader>dbu"] = {"<Cmd>DBUIToggle<Cr>", "Toggle DB UI"},
+    ["<leader>dbf"] = { "<Cmd>DBUIFindBuffer<Cr>", "Find buffer" },
+    ["<leader>dbr"] = { "<Cmd>DBUIRenameBuffer<Cr>", "Rename buffer" },
+    ["<leader>dbq"] = { "<Cmd>DBUILastQueryInfo<Cr>", "Last query info" },
   },
 }
 
