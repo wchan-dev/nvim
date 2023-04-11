@@ -16,14 +16,12 @@ local default_plugins = {
   },
 
   {
-    "NvChad/ui",
-    branch = "v2.0",
+    dir = "~/.config/nvim/ui",
     lazy = false,
     config = function()
       require "nvchad_ui"
     end,
   },
-
   {
     "NvChad/nvterm",
     init = function()
@@ -249,10 +247,7 @@ local default_plugins = {
       end
     end,
   },
-  {
-    "fatih/vim-go",
-  },
-  -- Only load whichkey after all the gui
+    -- Only load whichkey after all the gui
   {
     "folke/which-key.nvim",
     keys = { "<leader>", '"', "'", "`" },

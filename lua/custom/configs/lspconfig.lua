@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "tsserver", "clangd","gopls", "jedi_language_server", "bashls", "sqlls" }
+local servers = { "html", "cssls", "tsserver", "clangd", "gopls", "jedi_language_server", "bashls", "sqlls" }
 
 lspconfig["lua_ls"].setup {
   capabilities = capabilities,
@@ -34,7 +34,3 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- to setup noice
-vim.notify = require("noice").notify
-vim.lsp.handlers["textDocument/hover"] = require("noice").hover
-vim.lsp.handlers["textDocument/signatureHelp"] = require("noice").signature

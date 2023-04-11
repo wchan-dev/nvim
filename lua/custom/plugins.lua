@@ -64,6 +64,7 @@ local plugins = {
     end,
     lazy = false,
   },
+  -- plugin for cmd
   {
     "folke/noice.nvim",
     dependencies = {
@@ -72,8 +73,9 @@ local plugins = {
     },
     config = function()
       require("custom.configs.noice").setup()
+      require("custom.configs.notify").setup()
     end,
-    event = "VeryLazy",
+    lazy = false ,
   },
 }
 
