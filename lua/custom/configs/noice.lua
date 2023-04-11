@@ -6,7 +6,11 @@ function M.setup()
     cmdline = {
       enabled = true, -- enables the Noice cmdline UI
       view = "cmdline_popup", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
-      opts = {}, -- global options for the cmdline. See section on views
+      opts = {
+        popmenu = {
+          position = "auto"
+        }
+      }, -- global options for the cmdline. See section on views
       ---@type table<string, CmdlineFormat>
       format = {
         -- conceal: (default=true) This will hide the text in the cmdline that matches the pattern.
