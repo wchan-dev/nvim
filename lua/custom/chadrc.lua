@@ -17,14 +17,7 @@ M.ui = {
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
-  lsp = {
-    signature = {
-      disabled = true,
-      silent = true
-    }
-  }
 }
-
 
 M.plugins = "custom.plugins"
 
