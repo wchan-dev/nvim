@@ -38,7 +38,7 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  -- Install a plugin
+  -- install custom plugins outside of NVCHAD config
   {
     "max397574/better-escape.nvim",
     event = "InsertEnter",
@@ -46,10 +46,15 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
+  {
+    "fatih/vim-go",
+    lazy = false,
+  },
 
+  -- database navigation
   {
     "tpope/vim-dadbod",
-    cmd = {"DB", "DBUI" },
+    cmd = { "DB", "DBUI" },
     dependencies = {
       "kristijanhusak/vim-dadbod-ui",
       "kristijanhusak/vim-dadbod-completion",
@@ -59,11 +64,17 @@ local plugins = {
     end,
     lazy = false,
   },
-    -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
+  {
+    "folke/noice.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+    config = function()
+      require("custom.configs.noice").setup()
+    end,
+    event = "VeryLazy",
+  },
 }
 
 return plugins

@@ -17,7 +17,11 @@ M.ui = {
   transparency = true,
   hl_override = highlights.override,
   hl_add = highlights.add,
+  lsp = {
+    disabled = true,
+  }
 }
+
 
 M.plugins = "custom.plugins"
 
